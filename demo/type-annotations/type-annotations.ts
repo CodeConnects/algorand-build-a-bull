@@ -9,3 +9,20 @@ import { strict as assert } from "assert";
 //
 // Useful links:
 // https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-annotations-on-variables
+
+const hoursWorked: number = 22;
+const totalOT: number = 1.5;
+const holiday: boolean = false;
+
+// Type annotations can be added to function parameters to specify the types
+// of data that the function expects to receive.
+// The return type of the function can also be specified.
+function calculatePay(hoursWorked: number, totalOT: number, holiday: boolean): number {
+  let pay: number = 0;
+  if (holiday) {
+    pay = hoursWorked * 2;
+  } else {
+    pay = hoursWorked * totalOT;
+  }
+  return pay;
+}
