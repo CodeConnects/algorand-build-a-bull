@@ -7,3 +7,13 @@ import { strict as assert } from "assert";
 //
 // Useful links:
 // https://www.typescriptlang.org/docs/handbook/2/objects.html
+
+type Coordinate = {
+  x: number;
+  y: number;
+};  // Type alias
+
+const startingPoint: Coordinate = { x: 0, y: 0 };
+const endPoint: Coordinate = { x: 10, y: 10 };
+
+const newX = endPoint.x - startingPoint.x;
