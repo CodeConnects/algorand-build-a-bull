@@ -9,3 +9,10 @@
 // 
 // Useful links:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+const product = (a: number, b: number): number => {
+  return a * b;
+}
+const six = product(2, 3);
+console.log(six);
+
